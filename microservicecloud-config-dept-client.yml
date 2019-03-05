@@ -13,9 +13,9 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
 spring:
-   application:
    profiles: dev #开发环境
-    name: microservicecloud-dept                            #微服务的名字
+   application:
+    name: microservicecloud-config-dept-client                            #微服务的名字
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -52,9 +52,9 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
 spring:
+   profiles: test #开发环境
    application:
-   profiles: test #测试环境
-    name: microservicecloud-dept                            #微服务的名字
+    name: microservicecloud-config-dept-client                           #微服务的名字
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
